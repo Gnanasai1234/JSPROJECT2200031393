@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        //Passing an array to the function
+        function display(numbers){
+            let total=0
+            for(let element of numbers){
+                total=element+total
+                }
+            return total
+        }
+        const arr=[10,20,30,40,50]//Static array
+        document.writeln("Array = "+arr+"</br>")
+        document.writeln("Output = "+display(arr)+"</br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

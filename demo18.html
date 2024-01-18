@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <script>
+
+        document.writeln("<u>Demo on Arrays</u></br>")
+        const s=[34,143,89] //Same type of Elements
+        document.writeln(s+"</br>")
+        document.writeln(typeof(s)+"</br>")
+        document.writeln(s.length+"</br>")
+        document.writeln(s[0]+"</br>")
+        document.writeln(s[2]+"</br>")
+        document.writeln(s[5]+"</br>")
+        document.writeln(typeof(s[0])+"</br>")
+s[1]=50
+s[2]="CSE"
+document.writeln(s+"</br>")
+s.push("MSWD")
+s.push(100)
+document.writeln(s.length+"</br>")
+s.pop()
+document.writeln(s+"</br>")
+document.writeln(s.length+"</br>")
+document.writeln(s.reverse()+"</br>")
+document.writeln(s.sort()+"</br>")
+document.writeln("Array="+s+"</br>")
+let element=s.shift()
+document.writeln(s.length+"</br>")
+document.writeln(element+"</br>")
+document.writeln("After shifting ="+s+"</br>")
+let len=s.unshift(100.5)
+document.writeln("After Unshifting = "+len+"</br>")
+let len1=s.unshift("AWS",31,"PFSD")
+document.writeln(len1+"</br>")
+document.writeln("After Unshifting = "+s+"</br>")
+document.writeln("<u>Display Array elements using for loop </u></br>")
+for(let i=0;i<s.length;i++)
+{
+    document.writeln(s[i]+"</br>")
+}
+document.writeln("<u>Display Array elements using for in loop </u></br>")
+for(let i in s){
+    document.writeln(s[i]+"</br>")
+}
+document.writeln("<u>Display Array elements using for of loop </u></br>")
+for(let element of s){
+    document.writeln(element+"</br>")
+
+}
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

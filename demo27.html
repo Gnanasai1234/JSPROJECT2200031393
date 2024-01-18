@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        //declaration of array using new keyword
+        let arr =new Array()//Size is optional
+        const n=parseInt(prompt("Enter array size",1))
+
+        alert("Reading array elements")
+
+        for(let i=0;i<n;i++){
+            arr[i]=parseInt(prompt("Enter Element"+(i+1)))
+
+        }
+
+        document.writeln("<u>Displaying array elements</u></br>")
+       for(element of arr){
+document.writeln(element)
+       }
+const products=new Array("mobile","laptop","watch")//constructor
+document.writeln("</br>")
+document.writeln("Product Array Length:"+products.length)
+document.writeln("</br>")
+
+document.writeln("Product Array Length:"+typeof products)
+document.writeln("</br>")
+
+document.writeln("<u>Product array elements</br></u>")
+for(const p of products){
+    document.writeln(p)
+}
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
